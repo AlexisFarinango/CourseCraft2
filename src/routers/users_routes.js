@@ -4,6 +4,8 @@ import verificarAutenticacion from '../middlewares/autenticacion.js'
 const router = Router()
 
 
+
+
 import {
     login,
     perfil,
@@ -17,7 +19,6 @@ import {
     listarUsuarios,
     detallesUsuario
 } from "../controllers/users_controller.js"
-
 router.post('/login',login)
 router.post('/register',registro)
 router.get('/confirmation/:token',confirmarEmail)
